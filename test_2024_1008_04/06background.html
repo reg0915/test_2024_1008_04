@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://picsum.photos/300/200/?random=10");
+            background-attachment: fixed;
+        }
+
+        .box {
+            /* 盒模型 */
+            width: 600px;
+            height: 600px;
+            border: 5px solid #333;
+            box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
+            margin: 50px auto;
+
+
+            /* 文字 */
+            font-size: 3rem;
+            color: yellow;
+            text-shadow: 1px 1px 3px rgb(0, 0, 0);
+            /* 效果 */
+            backdrop-filter: blur(10px);
+        }
+
+        .bg-color {
+            background-color: antiquewhite;
+            /* 縮寫 */
+            /* background:deeppink; */
+
+            .bg-img {
+                /* picsum */
+                background-image: url("https://picsum.photos/300/200/?random=10");
+
+            }
+
+            .bg-reapeat-x {
+                background-repeat: repeat-x;
+            }
+
+            .bg-reapeat-y {
+                background-repeat: repeat-y;
+            }
+
+            .bg-no-repeat {
+                background-repeat: no-repeat;
+
+            }
+
+            .bg-position {
+                /* 雙值=>第一個水平，第二個是垂直 */
+                /* left、center、right<=> 0% 50% 100% */
+                /* top、center、bottom<=> 0% 50% 100% */
+                background-position: 100% 0;
+                background-position: bottom right;
+                /* 只寫一個值，另一個會被自動 center */
+                background-position: left;
+            }
+
+            /*
+        background-color
+         background-img
+         background-repeat
+         background-position
+         background-size
+         background-attachment
+         */
+
+            .bg-size {
+                background-image: url("https://picsum.photos/300/200/?random=10");
+                background-image: url(/pica.png);
+                background-repeat: no-repeat;
+                /* 關鍵字: contain、cover */
+                /* background-size: contain; */
+                background-size: cover;
+                background-size: 1000px;
+                background-position: 0px 0px;
+            }
+
+
+
+
+            /* background: color image repeat position/size; */
+            /* background-position 與 background-size 中間一定要 / */
+            .bg-abbr {
+                background: #ffa url(/pica.png) no-repeat 200px -196px /1000px
+            }
+
+            /* 
+        很重要
+        modle，了解 inline、inline-block、block的差異
+        flex box的應用
+        @meria
+        
+        
+        
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box bg-color">background-color</div>
+    <div class="box bg-img">background-img</div>
+    <!-- .box.bg-img.bg-repeat-x -->
+    <div class="box bg-img bg-repeat-x">background-repeat-x</div>
+    <div class="box bg-img bg-repeat-y">background-repeat-y</div>
+    <div class="box bg-img bg-no-repeat">background-no-repeat</div>
+    <div class="box bg-img bg-no-repeat bg-position">background-position</div>
+    <div class="box bg-size">background-size</div>
+    <div class="box bg-abbr">background-abbr</div>
+</body>
+
+</html>

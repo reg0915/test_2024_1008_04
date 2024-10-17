@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 基礎設定</title>
+    <!-- 第二種方式使用link ，適合用於開發網站-->
+    <link rel="stylesheet" href="./style1.css">
+
+
+    <!-- 第一種使用style 標籤樣式，該文件的專屬樣式 ，自己練習時可以使用-->
+    <style>
+        /* 
+        選擇器{
+        屬性:值；
+        屬性:值；
+        ...
+
+        }
+         */
+
+        /* 標籤選擇器 */
+        h1 {
+            color: red;
+
+            background-color: yellow;
+        }
+
+        p {
+            font-size: 30px;
+            /* color: green */
+        }
+
+        /* 群組選擇器 */
+        /* h1 的顏色被覆蓋了，由紅色變藍色 */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1 style="color: deeppink">title1</h1>
+    <!-- Lorem 假字 ,Lorem +數字 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et deleniti a dolore ipsum? Esse quisquam
+        quidem id eaque mollitia dolores doloribus error aliquid ipsa, fuga, quas sapiente labore dignissimos!</p>
+
+    <h1>title2</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro pariatur sapiente quis iste ea vitae corporis
+        consectetur, ducimus minima id rerum et maxime quam vel. Quam, esse consequuntur. At, harum.</p>
+
+    <h1>title3</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quod quia assumenda itaque asperiores, fugiat nisi
+        quas voluptas cum accusantium magni vitae. Nostrum officia maxime nemo obcaecati non, reiciendis fuga!</p>
+
+    <hr>
+
+    <h1>hello word</h1>
+    <h2>hello word</h2>
+    <h3>hello word</h3>
+    <h4>hello word</h4>
+    <h5>hello word</h5>
+    <h6>hello word</h6>
+
+
+</body>
+
+</html>
