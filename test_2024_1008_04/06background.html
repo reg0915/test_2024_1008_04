@@ -30,39 +30,41 @@
 
         .bg-color {
             background-color: antiquewhite;
-            /* 縮寫 */
-            /* background:deeppink; */
+        }
 
-            .bg-img {
-                /* picsum */
-                background-image: url("https://picsum.photos/300/200/?random=10");
+        /* 縮寫 */
+        /* background:deeppink; */
 
-            }
+        .bg-img {
+            /* picsum */
+            /* background-image: url("https://picsum.photos/300/200/?random=10"); */
 
-            .bg-reapeat-x {
-                background-repeat: repeat-x;
-            }
+        }
 
-            .bg-reapeat-y {
-                background-repeat: repeat-y;
-            }
+        .bg-reapeat-x {
+            background-repeat: repeat-x;
+        }
 
-            .bg-no-repeat {
-                background-repeat: no-repeat;
+        .bg-reapeat-y {
+            background-repeat: repeat-y;
+        }
 
-            }
+        .bg-no-repeat {
+            background-repeat: no-repeat;
 
-            .bg-position {
-                /* 雙值=>第一個水平，第二個是垂直 */
-                /* left、center、right<=> 0% 50% 100% */
-                /* top、center、bottom<=> 0% 50% 100% */
-                background-position: 100% 0;
-                background-position: bottom right;
-                /* 只寫一個值，另一個會被自動 center */
-                background-position: left;
-            }
+        }
 
-            /*
+        .bg-position {
+            /* 雙值=>第一個水平，第二個是垂直 */
+            /* left、center、right<=> 0% 50% 100% */
+            /* top、center、bottom<=> 0% 50% 100% */
+            background-position: 100% 0;
+            background-position: bottom right;
+            /* 只寫一個值，另一個會被自動 center */
+            background-position: left;
+        }
+
+        /*
         background-color
          background-img
          background-repeat
@@ -71,27 +73,27 @@
          background-attachment
          */
 
-            .bg-size {
-                background-image: url("https://picsum.photos/300/200/?random=10");
-                background-image: url(/pica.png);
-                background-repeat: no-repeat;
-                /* 關鍵字: contain、cover */
-                /* background-size: contain; */
-                background-size: cover;
-                background-size: 1000px;
-                background-position: 0px 0px;
-            }
+        .bg-size {
+            background-image: url("https://picsum.photos/300/200/?random=10");
+            background-image: url(/pica.png);
+            background-repeat: no-repeat;
+            /* 關鍵字: contain、cover */
+            /* background-size: contain; */
+            background-size: cover;
+            background-size: 1000px;
+            background-position: 0px 0px;
+        }
 
 
 
 
-            /* background: color image repeat position/size; */
-            /* background-position 與 background-size 中間一定要 / */
-            .bg-abbr {
-                background: #ffa url(/pica.png) no-repeat 200px -196px /1000px
-            }
+        /* background: color image repeat position/size; */
+        /* background-position 與 background-size 中間一定要 / */
+        .bg-abbr {
+            background: #ffa url(/pica.png) no-repeat 200px -196px /1000px
+        }
 
-            /* 
+        /* 
         很重要
         modle，了解 inline、inline-block、block的差異
         flex box的應用

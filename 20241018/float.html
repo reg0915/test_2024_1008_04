@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .left {
+            float: left;
+        }
+
+        /* float 會使浮起來的東西變成區塊元素 */
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- float 的元素不會被記入高度 -->
+    <div>
+        <div class="box left"></div>
+        <span class="right " style="width: 50px;">span會被轉成block</span>
+        <!-- float 會把元素變成 display block -->
+        <div class="box left"></div>
+        <div class="box right"></div>
+        <p>容器內的文字，float內的文字</p>
+        <!-- 預設其他東西圍繞漂浮元素，可以使用 clear 清除浮動，掛在漂浮的元素下一行(藥用) -->
+        <p style="clear: both;">float 容器內的clear 文字，float 內的位置</p>
+    </div>
+    <p>容器外的文字</p>
+    <hr>
+    <!-- 在漂浮的外層容器加上 overflow : hidden;可以讓漂浮元素被算入高度 -->
+    <div>
+        <div style="overflow: hidden;""></div>
+        <div class=" box left"></div>
+        <div class="box left"></div>
+        <div class="box left"></div>
+    </div>
+    <p>容器外的文字</p>
+</body>
+
+</html>
